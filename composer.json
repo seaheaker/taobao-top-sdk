@@ -1,0 +1,19 @@
+{
+    "name": "smallsea/tb-top-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smallsea",
+            "email": "seaheaker@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Taobao\\sdk\\": "src/",
+            "Taobao\\sdk\\topclient\\": "src/top/"
+        }
+    }
+}
