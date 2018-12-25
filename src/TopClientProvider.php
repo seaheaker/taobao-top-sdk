@@ -37,12 +37,12 @@ class TopClientProvider extends ServiceProvider
     {
         $this->app->singleton('topclient', function ($app) {
 
-            if (!array_key_exists('app_key', $app['config']['taobao_top'])
-                || !array_key_exists('app_secret', $app['config']['taobao_top'])) {
+            if (!array_key_exists('app_key', $app['taobao_top']['connections'])
+                || !array_key_exists('app_secret', $app['taobao_top']['connections'])) {
                 throw new \InvalidArgumentException('The top client requires api keys.');
             }
 
-            $config = array_only($app['config']['taobao_top'], ['app_key', 'app_secret', 'format']);
+            $config = array_only($app['taobao_top']['connections'], ['app_key', 'app_secret', 'format']);
 
             //创建client对象
             $topClient = new \Taobao\sdk\topclient\TopClient($config['app_key'], $config['app_secret']);
