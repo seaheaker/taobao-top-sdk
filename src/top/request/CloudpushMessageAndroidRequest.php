@@ -1,6 +1,8 @@
 <?php
 
 namespace Taobao\sdk\topclient\request;
+use Taobao\sdk\topclient\RequestCheckUtil;
+
 /**
  * TOP API: taobao.cloudpush.message.android request
  * 

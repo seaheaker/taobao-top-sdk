@@ -1,6 +1,8 @@
 <?php
 
 namespace Taobao\sdk\topclient\request;
+use Taobao\sdk\topclient\RequestCheckUtil;
+
 /**
  * TOP API: alibaba.aliqin.fc.iot.cardInfo request
  * 

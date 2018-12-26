@@ -1,6 +1,8 @@
 <?php
 
 namespace Taobao\sdk\topclient\request;
+use Taobao\sdk\topclient\RequestCheckUtil;
+
 /**
  * TOP API: taobao.tbk.tpwd.create request
  * 
@@ -100,7 +102,7 @@ class TbkTpwdCreateRequest
 	{
 		return $this->apiParas;
 	}
-	
+
 	public function check()
 	{
 		
